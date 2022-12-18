@@ -6,6 +6,22 @@
   <meta name="viewport" content="width=device-width">
   <title>Dubstep</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
+    <script>
+    function toggleTheme() {
+      // Obtains an array of all <link>
+      // elements.
+      // Select your element using indexing.
+      var theme = document.getElementsByTagName('link')[0];
+
+      // Change the value of href attribute 
+      // to change the css sheet.
+      if (theme.getAttribute('href') == 'style.css') {
+        theme.setAttribute('href', 'style2.css');
+      } else {
+        theme.setAttribute('href', 'style.css');
+      }
+    }
+  </script>
 </head>
 
 <body>
