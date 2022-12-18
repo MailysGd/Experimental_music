@@ -1,6 +1,6 @@
 html, body {
-  color : white ;
-  background-color: #0C1C2C;
+  color : #aa4444 ;
+  background-color: seashell;
 }
 #logo{
   padding-left: 1%;
@@ -8,7 +8,7 @@ html, body {
   height: 40px;
 }
 a{
-  color: #F5EDF0;
+  color: #FFADBC;
 }
 a:hover {
   color: #d5b3bf;
@@ -18,9 +18,10 @@ a:hover {
   padding: 1%;
   border-width: 0.1rem;
   border-style: solid;
-  border-color: cyan;
-  color: #d1abf3;
-  background-color: RGBa(0,0,0,0.3);
+  border-color: #ff5a94;
+  border-radius:15px ;
+  color: #610a5f;
+  background-color: RGBa(200,200,200,0.1);
 }
 #musisite {
   font-size: 50px;
@@ -40,7 +41,8 @@ body{
 }
 nav {
   width: 100%;
-  background-color: #366B96;
+  background-color: #FFC3C3;
+  border-radius : 25px;
 }
 nav ul {
   display: flex;
@@ -58,14 +60,13 @@ nav ul li{
 nav a{
   display: block;
   text-decoration: none;
-  color: ghostwhite;
+  color: white;
   border-bottom: 2px solid transparent;
   padding: 10px 0px;
 }
 
 nav a:hover{
   color: orange;
-  border-bottom: 2px solid gold;
 }
 .sousMenu{
   display: flex;
@@ -73,8 +74,9 @@ nav a:hover{
   overflow: hidden;
   max-height: 0;
   box-shadow: 0px 1px 2px #fce94f;
-  background-color: darkcyan;
+  background-color: #FF5D5D;
   position: absolute;
+  border-radius : 25px;
   width: 100%;
   z-index: 1000;
 }
@@ -118,10 +120,11 @@ nav > ul li:hover .sousMenu{
   list-style: none;
 }
 .video{
-  border-color: cyan;
+  border-color: #ff5a94;
   border-width: 0.1rem;
   max-width: 100%;
   aspect-ratio: 16/9;
+  border-radius : 25px;
 }
 footer{
   padding-top: 1rem;
@@ -137,6 +140,7 @@ footer{
   border-color: #d1abf3;
   border-width: 0.1rem;
   border-style: solid;
+  border-radius : 5px;
 }
 #btn {
   display:none;
@@ -158,16 +162,19 @@ footer{
 }
 #btn:checked + #contact{
   border-bottom-color: RGBa(209,171,243,0.3);
-
-}
-#btn:checked + label + form{
+  border-bottom-left-radius : 0px;
+  border-bottom-right-radius : 0px;
+  border-top-left-radius : 25px;
+  border-top-right-radius : 25px;
   
+}
+#btn:checked + label + form{  
   border-width: 0.1rem;
   animation-name: contact;
   animation-duration: 2s;
   max-height: 10rem;
+  background-color: RGBa(0,0,0,0.2)
 }
-
 form{
   display: flex;
   flex-direction: row;
@@ -182,11 +189,14 @@ form{
   border-style: solid;
   border-top-style: none;
   border-color: #d1abf3;
+  border-bottom-left-radius : 25px;
+  border-bottom-right-radius : 25px;
 
 }
 @keyframes contact{
   from{max-height: 0;}
-  to{max-height: 10rem;}
+  to{max-height: 10rem;
+    background-color: RGBa(0,0,0,0.2);}
 }
 
 .label_et_zone, textarea{
@@ -198,7 +208,8 @@ form{
 input,textarea{
   border-width: 0.1rem;
   border-style: solid;
-  border-color: cyan;
+  border-color: #ff5a94;
+  border-radius : 8px;
   color: ghostwhite;
 }
 div input, textarea{
@@ -213,23 +224,24 @@ div input, textarea{
   font-size: 100%;
   bottom: 30px;
   right: 30px;
-  color: gray;
+  color: lightgray;
   border-style: solid;
   border-width: 0.1rem;
-  border-color: cyan;
-  background-color: RGBa(0,0,0,0.3);
+  border-color: #ff5a94;
+  border-radius : 8px;
+  background-color: RGBa(200,200,200,0.1);
 }
 #to_the_top:hover{
   animation-name: to_the_top;
   animation-duration: 0.5s;
-  color: ghostwhite;
-  background-color: RGBa(200,200,200,0.1);
+  color: darkgray;
+  background-color:RGBa(0,0,0,0.2) ;
 }
 @keyframes to_the_top{
-  from{color:gray;
-      background-color: RGBa(0,0,0,0.3);}
-  to{color:ghostwhite;
-    background-color: RGBa(200,200,200,0.1);}
+  from{color:lightgray;
+      background-color: RGBa(200,200,200,0.1);}
+  to{color: darkgray;
+    background-color: RGBa(0,0,0,0.2);}
 }
 #switch{
   width: 50px;
@@ -240,9 +252,9 @@ div input, textarea{
   font-size: 100%;
   bottom: 30px;
   left: 30px;
-  border-radius : 8px;
   border-style: solid;
   border-width: 0.1rem;
-  border-color: #ff5a94;
-  background-color: lightgray;
+  border-color: cyan;
+  background-color: gray;
 }
+

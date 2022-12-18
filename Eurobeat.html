@@ -4,27 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <meta
-    descrption="Musisite is a place where you can learn about electronic music. Electronic music is a large area that includes a lot of subgenre. They have in common that the process of creation implies electronic instruments.">
-  <title>Musisite</title>
+  <title>Dubstep</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
-      
-  <script>
-    function toggleTheme() {
-      // Obtains an array of all <link>
-      // elements.
-      // Select your element using indexing.
-      var theme = document.getElementsByTagName('link')[0];
-
-      // Change the value of href attribute 
-      // to change the css sheet.
-      if (theme.getAttribute('href') == 'style.css') {
-        theme.setAttribute('href', 'style2.css');
-      } else {
-        theme.setAttribute('href', 'style.css');
-      }
-    }
-  </script>
 </head>
 
 <body>
@@ -86,15 +67,30 @@
       </li>
     </ul>
   </nav>
-  <section id="contenu">
-    <h1><a href="index.html">Musisite</a></h1>
-    <h2>A site for Electro music lovers</h2>
-
-    <p class="grosTexte">Electronic music is a large area that includes a lot of subgenre. They have in common that the
-      process of creation
-      implies electronic instruments.</p>
-    <img src="logo.png" alt="Logo du site">
+  <section id="contenu" id=top>
+    <a id="musisite" href="index.html"> Musisite </a>
+    <h1>Eurobeat</h1>
+    <h2 id="Description">Description</h2>
+    <p class="grosTexte"> Eurobeat is a niche genre of Hi-NRG almost exclusively used in the anime Initial D, It has a
+      high BPM and makes heavy use of synthetizer. It sometimes has a rock influence</p>
+    <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/yga4i2ZmvTE"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+    <h2 id="History">History</h2>
+    <p class="grosTexte">Nothing much to say aprt from its emergence in the 80's in UK and Italy</p>
+    <h2 id="Notable_artists">Notable artists</h2>
+    <ul class="grosTexte">
+      <li>David Dima</li>
+      <li>Leslie Parrish</li>
+      <li>Lou Master</li>
+      <li>coda</li>
+      <li>NUAGE</li>
+      <li>Manuel</li>
+      <li>Digital Planet</li>
+    </ul>
     <script src="script.js"></script>
+
   </section>
   <footer>
     <button id="switch" onclick="toggleTheme()"></button>
@@ -118,6 +114,9 @@
         <input id="submit" type="submit" value="Send">
       </div>
     </form>
+    <a href="#top" id="to_the_top">
+      <p>↑</p>
+    </a>
   </footer>
 </body>
 

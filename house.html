@@ -4,9 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <meta
-    descrption="Musisite is a place where you can learn about electronic music. Electronic music is a large area that includes a lot of subgenre. They have in common that the process of creation implies electronic instruments.">
-  <title>Musisite</title>
+  <title>House Music</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
       
   <script>
@@ -18,10 +16,10 @@
 
       // Change the value of href attribute 
       // to change the css sheet.
-      if (theme.getAttribute('href') == 'style.css') {
-        theme.setAttribute('href', 'style2.css');
+      if (theme.getAttribute('href') == "style.css") {
+        theme.setAttribute('href', "style2.css");
       } else {
-        theme.setAttribute('href', 'style.css');
+        theme.setAttribute('href', "style.css");
       }
     }
   </script>
@@ -86,15 +84,64 @@
       </li>
     </ul>
   </nav>
-  <section id="contenu">
-    <h1><a href="index.html">Musisite</a></h1>
-    <h2>A site for Electro music lovers</h2>
+  <section id="contenu" id="top">
+    <a id="musisite" href="index.html"> Musisite </a>
+    <h1>House</h1>
+    <h2 id="Description">Description</h2>
+    <p class=grosTexte> House music is a pretty simple style characterized by what is called the "four on the floor". it
+      is a expression that describes a music where the kick hits on the four times. Often, voice samples are used in
+      House music and has a funk style bass.</p>
 
-    <p class="grosTexte">Electronic music is a large area that includes a lot of subgenre. They have in common that the
-      process of creation
-      implies electronic instruments.</p>
-    <img src="logo.png" alt="Logo du site">
+    <h2 id="History">History</h2>
+
+    <p class="grosTexte"> House derived from funk and disco with the addition of electronic sounds and the "four on the
+      floor". After the beginning house has evolved in a lot of subgenres beacause it is influenced by the styles that
+      are the most popular at the time.</p>
+
+    <h2 id="Notable_artists">Notable artists</h2>
+    <ul class="grosTexte">
+      <li>Earth n days</li>
+      <li>ATFC</li>
+      <li>Pascal Junior</li>
+      <li>Tchami</li>
+      <li>Modjo </li>
+      <li>Parcels</li>
+      <li>Ehrling</li>
+    </ul>
+
+    <h2 id="Jackin_House" id="Jackin_House">Jakin House</h2>
+    <p class="grosTexte"> Jackin house takes its name from the dans with the same name, it is charcaterized by the heavy
+      use of old sample (voices or not).</p>
+    <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/5mDdEEXG4QU"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+    <h2 id="French_House" id="French_House">French House</h2>
+    <p class="grosTexte"> French House (or French touch) has a more fresh touch to it, it feel smoother to listen, it is
+      lighter than traditional house. Its name comes from the fact that the first and most of french house producer are
+      french</p>
+    <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/mMfxI3r_LyA"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+    <h2 id=Future_House>Future House</h2>
+
+    <p class="grosTexte">Future house has metalic drops, synthesizer and a muted melody (that is not the main thing you
+      hear)</p>
+    <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/fFBYdvxOAXs"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+    <h2 id="Tropical_House">Tropical House</h2>
+    <p class="grosTexte"> Tropical House explains itself, it is made to be listen on the beach it is relaxing due to a
+      lower bpm, melodies are gives only good vibes and of course the foor on the floor is present.</p>
+    <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/T1yU1b_xteI"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
     <script src="script.js"></script>
+
+    <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
   </section>
   <footer>
     <button id="switch" onclick="toggleTheme()"></button>
@@ -118,6 +165,9 @@
         <input id="submit" type="submit" value="Send">
       </div>
     </form>
+    <a href="#top" id="to_the_top">
+      <p>↑</p>
+    </a>
   </footer>
 </body>
 

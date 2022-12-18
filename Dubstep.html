@@ -4,27 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <meta
-    descrption="Musisite is a place where you can learn about electronic music. Electronic music is a large area that includes a lot of subgenre. They have in common that the process of creation implies electronic instruments.">
-  <title>Musisite</title>
+  <title>Dubstep</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
-      
-  <script>
-    function toggleTheme() {
-      // Obtains an array of all <link>
-      // elements.
-      // Select your element using indexing.
-      var theme = document.getElementsByTagName('link')[0];
-
-      // Change the value of href attribute 
-      // to change the css sheet.
-      if (theme.getAttribute('href') == 'style.css') {
-        theme.setAttribute('href', 'style2.css');
-      } else {
-        theme.setAttribute('href', 'style.css');
-      }
-    }
-  </script>
 </head>
 
 <body>
@@ -86,14 +67,40 @@
       </li>
     </ul>
   </nav>
-  <section id="contenu">
-    <h1><a href="index.html">Musisite</a></h1>
-    <h2>A site for Electro music lovers</h2>
-
-    <p class="grosTexte">Electronic music is a large area that includes a lot of subgenre. They have in common that the
-      process of creation
-      implies electronic instruments.</p>
-    <img src="logo.png" alt="Logo du site">
+  <section id="contenu" id="top">
+    <a id="musisite" href="index.html"> Musisite </a>
+    </table>
+    <h1>Dubstep</h1>
+    <h2 id="Description">Description</h2>
+    <p class="grosTexte">Dupstep is an electronic music genre. It is the most representative genre of EDM because of its
+      popularity during the early 2010's.
+      Bass is the key element to dubstep and serves as the defining feature of the subgenre's sound. The herky-jerky
+      rhythmic element of dubstep takes its cues from related genres like <strong>drum 'n' bass</strong>,
+      <strong>garage</strong>, and <strong>grime</strong>.
+    </p>
+    <h2 id="History">History</h2>
+    <p class="grosText">Dupstep comes from the work of some Drum n Bass artists that own a nighclub. It began in London
+      is the 90's</p>
+    <h2 id="Notable_artists">Notable artists</h2>
+    <ul class="grosTexte">
+      <li>Teminite</li>
+      <li>Skrillex</li>
+      <li>Panda Eyes</li>
+      <li>F-777</li>
+      <li>Geoxor</li>
+      <li>Adventure Club</li>
+      <li>Minnesota</li>
+    </ul>
+    <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/qj5ZahqBfFE"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+    <h2>Melodic Dubstep</h2>
+    <p class="grosTexte">Dubstep but with heavy, powerful synth and of course more meloy</p>
+    <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/taVkdTMopP8"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
     <script src="script.js"></script>
   </section>
   <footer>
@@ -118,6 +125,9 @@
         <input id="submit" type="submit" value="Send">
       </div>
     </form>
+    <a href="#top" id="to_the_top">
+      <p>↑</p>
+    </a>
   </footer>
 </body>
 

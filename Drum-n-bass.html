@@ -4,27 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <meta
-    descrption="Musisite is a place where you can learn about electronic music. Electronic music is a large area that includes a lot of subgenre. They have in common that the process of creation implies electronic instruments.">
   <title>Musisite</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
-      
-  <script>
-    function toggleTheme() {
-      // Obtains an array of all <link>
-      // elements.
-      // Select your element using indexing.
-      var theme = document.getElementsByTagName('link')[0];
-
-      // Change the value of href attribute 
-      // to change the css sheet.
-      if (theme.getAttribute('href') == 'style.css') {
-        theme.setAttribute('href', 'style2.css');
-      } else {
-        theme.setAttribute('href', 'style.css');
-      }
-    }
-  </script>
 </head>
 
 <body>
@@ -86,15 +67,34 @@
       </li>
     </ul>
   </nav>
-  <section id="contenu">
-    <h1><a href="index.html">Musisite</a></h1>
-    <h2>A site for Electro music lovers</h2>
+  <section id="contenu" id="top">
+    <a id="musisite" href="index.html"> Musisite </a>
 
-    <p class="grosTexte">Electronic music is a large area that includes a lot of subgenre. They have in common that the
-      process of creation
-      implies electronic instruments.</p>
-    <img src="logo.png" alt="Logo du site">
+    <h1><strong>Drum n Bass</strong></h1>
+    <h2 id="Description">Description</h2>
+    <p class=grosTexte>Drum and Bass (also written as 'Drum n Bass' is a genre of electronic dance music characterized
+      by
+      fast breakbeats with heavy bass and sub-bass lines, samples and synthetizers. It posseses many sub-genres such as
+      <strong>Jungle</strong>, <strong>Darkcore</strong> and <strong>Liquid</strong>.
+    </p>
+    <h2 id="History">History</h2>
+    <p class=grosTexte>This genre was born in the early 1990's in the United Kingdom's famous raves. From the popular
+      sounds of the Breakbeat hardcore, people started to add more basslines and breakbeats to their melodies. Later on,
+      Drum N Bass became really popular thanks to the many artists that made it evolde with their own artistic
+      directions.
+    </p>
+    <h2 id="Notable_artists">Notable artists</h2>
+    <ul class="grosTexte">
+      <li>Rudimental</li>
+      <li>Delta Heavy</li>
+      <li>Ramseses B </li>
+      <li>Sub Focus</li>
+      <li>The Prodigy</li>
+      <li>Culture Shock</li>
+      <li>1991</li>
+    </ul>
     <script src="script.js"></script>
+
   </section>
   <footer>
     <button id="switch" onclick="toggleTheme()"></button>
@@ -118,6 +118,9 @@
         <input id="submit" type="submit" value="Send">
       </div>
     </form>
+    <a href="#top" id="to_the_top">
+      <p>↑</p>
+    </a>
   </footer>
 </body>
 

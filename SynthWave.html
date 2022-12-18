@@ -4,27 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <meta
-    descrption="Musisite is a place where you can learn about electronic music. Electronic music is a large area that includes a lot of subgenre. They have in common that the process of creation implies electronic instruments.">
-  <title>Musisite</title>
+  <title>SynthWave</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
-      
-  <script>
-    function toggleTheme() {
-      // Obtains an array of all <link>
-      // elements.
-      // Select your element using indexing.
-      var theme = document.getElementsByTagName('link')[0];
-
-      // Change the value of href attribute 
-      // to change the css sheet.
-      if (theme.getAttribute('href') == 'style.css') {
-        theme.setAttribute('href', 'style2.css');
-      } else {
-        theme.setAttribute('href', 'style.css');
-      }
-    }
-  </script>
 </head>
 
 <body>
@@ -86,15 +67,41 @@
       </li>
     </ul>
   </nav>
-  <section id="contenu">
-    <h1><a href="index.html">Musisite</a></h1>
-    <h2>A site for Electro music lovers</h2>
+  <section id="contenu" id="top">
+    <a id="musisite" href="index.html"> Musisite </a>
+    <h1>SynthWave</h1>
+    <h2 id="Description">Description</h2>
 
-    <p class="grosTexte">Electronic music is a large area that includes a lot of subgenre. They have in common that the
-      process of creation
-      implies electronic instruments.</p>
-    <img src="logo.png" alt="Logo du site">
+    <p class="grosTexte">Synthwave, also called Retrowave, is a musical and artistic genre that was born in the early
+      2010's. It is mainly inspired by the 80's musics, ful of synthetizers sounds.</p>
+    <h2 id="History">History</h2>
+    <p class="grosTexte"> Synthwave was born in the early 2010's and quikcly gained popularity thanks to the movie Drive
+      where "Nightcall" by Kavinsky was featured. It made sythwave a bit popular and now this genre is slowly rising to
+      the top style of a lot of people</p>
+    <h2 id="Notable_artists">Notable artists</h2>
+    <ul class="grosTexte">
+      <li>Sebastian Gampl</li>
+      <li>LeBrock</li>
+      <li>Dance With The Dead</li>
+      <li>Pylot</li>
+      <li>Neon Nox</li>
+      <li>Dana Jean Phoenix</li>
+      <li>Lazerhawk</li>
+    </ul>
+    <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/9-_xqjVLxvs"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+    <h2 id="Darksynth">Darksynth</h2>
+    <p class="grosTexte">Darksynth is the sythwave but without the heartwarming felling of Miami and its beaches, palm
+      trees and purple sun. Darksynth evokes distopic world with war everywhere and a more futuristic/cyberpunk
+      aesthetic</p>
+    <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/8wSUDsG1jcU"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
     <script src="script.js"></script>
+
   </section>
   <footer>
     <button id="switch" onclick="toggleTheme()"></button>
@@ -118,6 +125,9 @@
         <input id="submit" type="submit" value="Send">
       </div>
     </form>
+    <a href="#top" id="to_the_top">
+      <p>↑</p>
+    </a>
   </footer>
 </body>
 
